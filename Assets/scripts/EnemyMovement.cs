@@ -15,7 +15,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] Text Damage;
     private float Health = 100;
 
-    public string NewGameScene;
+    [SerializeField] string NewGameScene;
 
     // Start is called before the first frame update
     void Start()
@@ -38,20 +38,20 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.name == "Player")
+        if(collision.gameObject.CompareTag ("Player"))
         {
-            Health -= 20;
+            Health -= 10;
             SetDamageText();
-            if(Health == 0)
-            {
-                NewGame();
-            }
         }
     }
 
     void SetDamageText()
     {
         Damage.text = "Health: " + Health.ToString() + "%";
+        if (Health == 0)
+        {
+            NewGame();
+        }
     }
 
     public void NewGame()

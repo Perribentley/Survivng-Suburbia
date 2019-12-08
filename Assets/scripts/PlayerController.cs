@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,8 +14,10 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody RBPlayer;
 
-    private int FuseCount;
+    private int FuseCount = 0;
     [SerializeField] Text Fuses;
+
+    [SerializeField] string NewGameScene;
 
     // Start is called before the first frame update
     void Start()
@@ -57,17 +60,26 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Fuse")
+        if (other.gameObject.CompareTag ("Pick Up"))
         {
+            other.gameObject.SetActive(false);
             FuseCount += 1;
             Debug.Log(FuseCount);
             SetFuseText();
-            other.gameObject.SetActive(false);
         }
     }
 
     void SetFuseText()
     {
         Fuses.text = "Fuses: " + FuseCount.ToString();
+        if(FuseCount == 3)
+        {
+            NewScene();
+        }
+    }
+
+    public void NewScene()
+    {
+        SceneManager.LoadScene(NewGameScene);
     }
 }
