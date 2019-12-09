@@ -9,15 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 12a7a939a7efdaa4a8604c1fccfe0b6b
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 41f040312f84f6e4e95f3b72d94fda90
+  - enabled: 1
     path: Assets/Scenes/Survivng Suburbia.unity
     guid: 96d7e6350548aee42a75a531b00067b2
   - enabled: 1
-    path: Assets/Scenes/Credits.unity
-    guid: 778b6d28e0d5d3842bdeda50f7fdb434
+    path: Assets/Scenes/SS Level 2.unity
+    guid: 1ae4f50a07b72ea4dabbcd6461662feb
   - enabled: 1
     path: Assets/Scenes/Death Screen.unity
     guid: ba7b50f4b0910194c95321281ecbbcf0
   - enabled: 1
     path: Assets/Scenes/Win Scene.unity
     guid: f1d7abfffb27db04eb2f2c7be7e175f9
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 778b6d28e0d5d3842bdeda50f7fdb434
+  - enabled: 1
+    path: Assets/Scenes/Level Select.unity
+    guid: e58d38f2b1b919049889205ae8dd22d6
   m_configObjects: {}

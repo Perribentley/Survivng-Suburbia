@@ -17,8 +17,6 @@ public class PlayerController : MonoBehaviour
     private int FuseCount = 0;
     [SerializeField] Text Fuses;
 
-    [SerializeField] string NewGameScene;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -80,6 +78,6 @@ public class PlayerController : MonoBehaviour
 
     public void NewScene()
     {
-        SceneManager.LoadScene(NewGameScene);
+        SceneManager.LoadScene(5);
     }
 }

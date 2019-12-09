@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] string NewGameScene;
 
     // Start is called before the first frame update
     void Start()
@@ -19,13 +18,23 @@ public class MainMenu : MonoBehaviour
 
     }
 
-    public void StartGame()
+    public void Levels()
     {
-        SceneManager.LoadScene(NewGameScene);
+        SceneManager.LoadScene(7);
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void EndGame()
     {
         Application.Quit();
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene(6);
     }
 }
