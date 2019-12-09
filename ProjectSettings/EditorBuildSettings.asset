@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Survivng Suburbia.unity
     guid: 96d7e6350548aee42a75a531b00067b2
   - enabled: 1
+    path: Assets/Scenes/SS Level Two.unity
+    guid: 0086ee4941abaca4cb412ef83c3db9a9
+  - enabled: 0
     path: Assets/Scenes/SS Level 2.unity
     guid: 1ae4f50a07b72ea4dabbcd6461662feb
   - enabled: 1
