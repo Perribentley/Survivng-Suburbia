@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] float Speed = 10f;
-    [SerializeField] float TurnSpeed = 20f;
+    [SerializeField] float TurnSpeed = 40f;
     private float HorizontalInput;
     private float ForwardInput;
 
@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
 
     void SetFuseText()
     {
-        Fuses.text = "Fuses: " + FuseCount.ToString();
+        Fuses.text = ": " + FuseCount.ToString();
         if(FuseCount == 3)
         {
             NewScene();

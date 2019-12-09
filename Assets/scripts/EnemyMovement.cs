@@ -13,7 +13,8 @@ public class EnemyMovement : MonoBehaviour
     private GameObject Player;
 
     [SerializeField] Text Damage;
-    private float Health = 100;
+    private float Health = 100f;
+    private float DamageAmount = 10f;
 
     [SerializeField] string NewGameScene;
 
@@ -40,7 +41,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if(collision.gameObject.CompareTag ("Player"))
         {
-            Health -= 10;
+            Health -= DamageAmount;
             SetDamageText();
         }
     }
