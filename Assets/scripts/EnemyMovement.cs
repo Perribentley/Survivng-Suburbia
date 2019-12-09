@@ -14,7 +14,7 @@ public class EnemyMovement : MonoBehaviour
 
     [SerializeField] Text Damage;
     private float Health = 100f;
-    private float DamageAmount = 10f;
+    [SerializeField] float DamageAmount = 10f;
 
     [SerializeField] string NewGameScene;
 
